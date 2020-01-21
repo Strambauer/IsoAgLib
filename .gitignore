@@ -3,3 +3,8 @@ doc/html/*.html
 doc/html/*.map
 doc/html/*.md5
 doc/html/*.png
+tools/vt2iso/cmake/CMakeCache.txt
+tools/vt2iso/cmake/CMakeFiles
+tools/vt2iso/cmake/cmake_install.cmake
+tools/vt2iso/cmake/Makefile
+tools/vt2iso/cmake/vt2iso

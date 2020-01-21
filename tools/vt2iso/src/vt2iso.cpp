@@ -12,7 +12,7 @@
 */
 
 // Headers are order dependant
-#include "svnversion.h"
+//#include "svnversion.h"
 
 #include <sstream>
 #include <vector>
@@ -229,7 +229,7 @@ Vt2IsoImageFreeImage_c c_Bitmap;
 // ---------------------------------------------------------------------------
 static void usage()
 {
-  std::cout << "\nvt2iso BUILD DATE: " << __DATE__ << std::endl << "svn-revision: " << SVNVERSION << std::endl << std::endl <<
+  std::cout << "\nvt2iso BUILD DATE: " << __DATE__ << std::endl << "svn-revision: " << "Git-Hub Strambauer" << std::endl << std::endl <<
     "Usage:\n"
     " vt2iso [options] <VTP file> [options]"<<std::endl<<std::endl<<
     "This program converts the input-files into ISOAgLib VT-Client Code-files."<<std::endl<<
