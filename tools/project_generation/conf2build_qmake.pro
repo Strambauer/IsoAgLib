@@ -3,6 +3,15 @@ CONFIG -= qt
 
 TARGET = ${INSERT_QMAKE_PROJECT}
 
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /home/pi/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += /opt/qt5pi/sysroot/usr/include
+
+LIBS += -L/opt/qt5pi/sysroot/usr/lib -lwiringPi
+
 INCLUDEPATH += ${INSERT_QMAKE_INCLUDE_DIRECTORIES}
 DEPENDPATH += ${INSERT_QMAKE_INCLUDE_DIRECTORIES}
 
